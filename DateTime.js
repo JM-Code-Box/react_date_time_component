@@ -38,8 +38,4 @@ class clock extends Component {
     }
 }
 
-
-
-
-
 export default clock;
