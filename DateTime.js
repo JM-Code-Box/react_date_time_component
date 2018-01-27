@@ -8,7 +8,15 @@ class clock extends Component {
     }
 
     getTime = () => {
-        const takeTwelve = (n) => n > 12 ? n - 12 : n;
+        const takeTwelve = (n) => {
+            if (n > 12) {
+                return n - 12;
+            } if (n == 0) {
+                return '12'
+            } else { 
+                return n; 
+            }
+        };
         const addZero = (n) => n < 10 ? '0' + n : n;
         const amPm = (n) => n > 12 ? 'pm' : 'am';
         
