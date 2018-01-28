@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class clock extends Component {
+class dateTime extends Component {
   
     state = {
         time: new Date().toLocaleTimeString(),
@@ -46,4 +46,4 @@ class clock extends Component {
     }
 }
 
-export default clock;
+export default dateTime;
